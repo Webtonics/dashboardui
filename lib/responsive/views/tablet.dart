@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import '../../constants/app_bar.dart';
 import '../../utils/box.dart';
 import '../../utils/my_tile.dart';
-import '../../widgets/title.dart';
 
 class TabletView extends StatefulWidget {
   const TabletView({super.key});

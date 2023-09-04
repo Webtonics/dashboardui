@@ -1,15 +1,9 @@
-import 'package:dashboard/screens/about.dart';
-import 'package:dashboard/screens/dash_board.dart';
-import 'package:dashboard/screens/settings.dart';
 import 'package:dashboard/utils/box.dart';
 import 'package:dashboard/utils/my_tile.dart';
-import 'package:dashboard/widgets/menu_icons.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/app_bar.dart';
 import '../../constants/drawer_menu.dart';
-import '../../screens/log_out.dart';
-import '../../widgets/title.dart';
 
 class MobileView extends StatefulWidget {
   const MobileView({super.key});

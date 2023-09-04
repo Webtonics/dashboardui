@@ -1,11 +1,11 @@
 import 'package:dashboard/constants/drawer_menu.dart';
+import 'package:dashboard/utils/profile_details.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/app_bar.dart';
 import '../../constants/default_background.dart';
 import '../../utils/box.dart';
 import '../../utils/my_tile.dart';
-import '../../widgets/title.dart';
 
 class DeskTopView extends StatefulWidget {
   const DeskTopView({super.key});
@@ -22,8 +22,9 @@ class _DeskTopViewState extends State<DeskTopView> {
       backgroundColor: defaultBackground,
       body: Row(
         children: [
-          drawerMenu,
+          Expanded(child: drawerMenu),
           Expanded(
+            flex: 3,
             child: Column(
               children: [
                 AspectRatio(
@@ -58,6 +59,11 @@ class _DeskTopViewState extends State<DeskTopView> {
               ],
             ),
           ),
+          const Expanded(
+              child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: ProfileDetail(),
+          ))
         ],
       ),
     );
